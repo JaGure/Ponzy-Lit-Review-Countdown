@@ -52,3 +52,9 @@ body {
 #title-text {
     font-size: 75px;
 }
+
+@media (max-width: 500px) {
+    #title-text {
+        font-size: 40px;;
+    }
+}
