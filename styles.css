@@ -1,6 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: "Comic Sans MS", "Sans-Serif";
     background-color: #b3e8e8;
+    color: #f7fcfc;
+    font-weight: bold;
 }
 
 #container {
@@ -8,8 +15,20 @@ body {
     height: 100vh;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 20% [body-col-start] auto [body-col-end] 20%;
+    grid-template-columns: 10% [body-col-start] auto [body-col-end] 10%;
     grid-template-rows: 25% [body-row-start] auto [body-row-end] 25%;
+}
+
+.text-box {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-box p {
+    flex: initial;
+    text-align: center;
 }
 
 #timer-box {
@@ -17,16 +36,19 @@ body {
     grid-column-end: body-col-end;
     grid-row-start: body-row-start;
     grid-row-end: body-row-end;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
 }
 
 #timer-text {
-    flex: initial;
-    text-align: center;
-    color: #f7fcfc;
     font-size: 50px;
-    font-weight: bold;
+}
+
+#title-box {
+    grid-column-start: body-col-start;
+    grid-column-end: body-col-end;
+    grid-row-start: 1;
+    grid-row-end: body-row-start;
+}
+
+#title-text {
+    font-size: 75px;
 }
