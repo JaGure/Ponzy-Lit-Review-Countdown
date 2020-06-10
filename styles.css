@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -18,7 +19,6 @@ body {
 #container {
     width: 100vw;
     height: 100vh;
-    box-sizing: border-box;
     display: grid;
     grid-template-columns: 10% [body-col-start] auto [body-col-end] 10%;
     grid-template-rows: 25% [body-row-start] auto [body-row-end] 25%;
