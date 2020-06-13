@@ -1,4 +1,4 @@
-const dueDate = new Date("June 21 2020 00:01")
+const dueDate = new Date("June 21 2020 20:00")
 
 const computeTimeRemaining = () => {
     const currentDate = new Date()
