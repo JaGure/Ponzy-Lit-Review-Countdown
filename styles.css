@@ -1,65 +1,80 @@
 @font-face {
-    font-family: 'Comic Sans MS';
-    src: url("ComicSans.ttf");
+  font-family: "Comic Sans MS";
+  src: url("ComicSans.ttf");
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Comic Sans MS", "Sans-Serif";
-    background-color: #b3e8e8;
-    color: #f7fcfc;
-    font-weight: bold;
+  font-family: "Comic Sans MS", "Sans-Serif";
+  background-color: #b3e8e8;
+  color: #f7fcfc;
+  font-weight: bold;
 }
 
 #container {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 10% [body-col-start] auto [body-col-end] 10%;
-    grid-template-rows: 25% [body-row-start] auto [body-row-end] 25%;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 10% [body-col-start] auto [body-col-end] 10%;
+  grid-template-rows: 25% [body-row-start] auto [body-row-end] 25%;
 }
 
 .text-box {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .text-box p {
-    flex: initial;
-    text-align: center;
+  flex: initial;
+  text-align: center;
 }
 
 #timer-box {
-    grid-column-start: body-col-start;
-    grid-column-end: body-col-end;
-    grid-row-start: body-row-start;
-    grid-row-end: body-row-end;
+  grid-column-start: body-col-start;
+  grid-column-end: body-col-end;
+  grid-row-start: body-row-start;
+  grid-row-end: body-row-end;
 }
 
 #timer-text {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 #title-box {
-    grid-column-start: body-col-start;
-    grid-column-end: body-col-end;
-    grid-row-start: 1;
-    grid-row-end: body-row-start;
+  grid-column-start: body-col-start;
+  grid-column-end: body-col-end;
+  grid-row-start: 1;
+  grid-row-end: body-row-start;
 }
 
 #title-text {
-    font-size: 75px;
+  font-size: 75px;
+}
+
+#msg-box {
+  grid-column-start: body-col-start;
+  grid-column-end: body-col-end;
+  grid-row-start: body-row-end;
+  grid-row-end: 4;
+}
+
+#msg {
+  font-size: 25px;
 }
 
 @media (max-width: 500px) {
-    #title-text {
-        font-size: 40px;
-    }
+  #title-text {
+    font-size: 40px;
+  }
+
+  #container {
+    grid-template-rows: 25% [body-row-start] auto [body-row-end] 35%;
+  }
 }
