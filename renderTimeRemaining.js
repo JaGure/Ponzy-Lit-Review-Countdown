@@ -1,11 +1,11 @@
-const computeTimeRemaining = require('./timeRemaining')
+const computeTimeRemaining = require("./timeRemaining");
 
 const updateTimeRemaining = () => {
-    const { days, hours, minutes, seconds } = computeTimeRemaining()
+  const { days, hours, minutes, seconds } = computeTimeRemaining();
 
-    const timeText = days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's' 
+  const timeText = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
 
-    document.getElementById('timer-text').innerHTML = timeText;
-}
+  document.getElementById("timer-text").innerHTML = timeText;
+};
 
-setInterval(updateTimeRemaining, 1000)
+setInterval(updateTimeRemaining, 1000);
