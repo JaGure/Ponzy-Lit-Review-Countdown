@@ -7,7 +7,7 @@ const updateTimeRemaining = () => {
 
   if (days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0) {
     timeText =
-      "Time's up! Unless you're submitting in late... 👀 I'll update this bad boi soon with the next due date.";
+      "Time's up! Unless you're submitting it late... 👀 I'll update this bad boi soon with the next due date.";
   }
 
   document.getElementById("timer-text").innerHTML = timeText;
