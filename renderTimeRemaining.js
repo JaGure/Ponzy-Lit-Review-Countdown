@@ -5,7 +5,7 @@ const updateTimeRemaining = () => {
 
   let timeText = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
 
-  if (days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0) {
+  if (days <= 0 || hours <= 0 || minutes <= 0 || seconds <= 0) {
     timeText =
       "Time's up! Unless you're submitting it late... 👀 I'll update this bad boi soon with the next due date.";
   }
